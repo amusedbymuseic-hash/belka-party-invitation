@@ -350,6 +350,8 @@ body {
 
 /* Gazebo / picnic slide */
 .gazebo-panel {
+  position: relative;
+  overflow: hidden;
   background: var(--paper);
   min-height: 100svh;
   padding: calc(34px + env(safe-area-inset-top)) 0 calc(18px + env(safe-area-inset-bottom));
@@ -393,12 +395,13 @@ body {
 
 .bunting {
   position: absolute;
-  top: calc(18px + env(safe-area-inset-top));
+  top: calc(4px + env(safe-area-inset-top));
   left: 50%;
-  width: min(94vw, 420px);
+  width: min(112vw, 540px);
+  max-width: none;
   height: auto;
   transform: translateX(-50%) rotate(-1deg);
-  z-index: 2;
+  z-index: 5;
   opacity: .42;
   filter: saturate(.45) contrast(.92) brightness(1.04);
   transform-origin: 50% 0;
